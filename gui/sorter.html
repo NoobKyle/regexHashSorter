@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hash Sorter</title>
+          <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>sha256 Hash Sorter</h1>
+        <br/>
+
+
+        <table style="width:100%">
+          <tr>
+            <th>Input</th>
+            <th></th>
+            <th>Output</th>
+          </tr>
+          <tr>
+            <td>
+                <textarea autofocus cols="90%" rows="20%" id='input'></textarea>
+            </td>
+            <td>
+                <button id='searchHashes' onclick="searchHashes()">Search Hashes</button>
+                <br/>
+                <br/>
+                <button id='sortHashes' onclick="sortHashes()">Sort Hashes</button>
+                <br/>
+                <br/>
+                <button id='addFormating' onclick="addFormating()">Add Formating</button>
+                <br/>
+                <br/>
+                <br/>
+                <button id='clear' onclick="clearTextAreas()">Clear</button>
+            </td>
+            <td>
+                <textarea  cols="90%" rows="20%" id='output'></textarea>
+            </td>
+          </tr>
+        </table>
+
+        <br/>
+
+        <p>Instructions : </p>
+        <p>Search Hashes - searches for 64 digit hex strings from an list.</p>
+        <p>Sort Hashes - puts each hash on a new line.</p>
+        <p>Add Formating - formats the hashes into this style : sha256='HASH'</p>
+
+        <br/>
+        <p>NB : Hashes found can be any 64 digit string which may be an invalid hash.</p>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
